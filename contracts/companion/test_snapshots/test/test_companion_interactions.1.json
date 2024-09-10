@@ -120,6 +120,8 @@
     [],
     [],
     [],
+    [],
+    [],
     []
   ],
   "ledger": {
@@ -157,7 +159,14 @@
                     "storage": [
                       {
                         "key": {
-                          "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                          "vec": [
+                            {
+                              "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                            },
+                            {
+                              "symbol": "1234"
+                            }
+                          ]
                         },
                         "val": {
                           "map": [
@@ -214,7 +223,14 @@
                       },
                       {
                         "key": {
-                          "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
+                          "vec": [
+                            {
+                              "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                            },
+                            {
+                              "symbol": "5678"
+                            }
+                          ]
                         },
                         "val": {
                           "map": [
@@ -268,6 +284,97 @@
                             }
                           ]
                         }
+                      },
+                      {
+                        "key": {
+                          "vec": [
+                            {
+                              "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
+                            },
+                            {
+                              "symbol": "9999"
+                            }
+                          ]
+                        },
+                        "val": {
+                          "map": [
+                            {
+                              "key": {
+                                "symbol": "feed"
+                              },
+                              "val": {
+                                "i32": 0
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "pat"
+                              },
+                              "val": {
+                                "i32": 0
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "pickup"
+                              },
+                              "val": {
+                                "i32": 0
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "points"
+                              },
+                              "val": {
+                                "i32": 3
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "sleep"
+                              },
+                              "val": {
+                                "i32": 0
+                              }
+                            },
+                            {
+                              "key": {
+                                "symbol": "toy"
+                              },
+                              "val": {
+                                "i32": 0
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "key": {
+                          "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                        },
+                        "val": {
+                          "vec": [
+                            {
+                              "symbol": "1234"
+                            },
+                            {
+                              "symbol": "5678"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "key": {
+                          "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
+                        },
+                        "val": {
+                          "vec": [
+                            {
+                              "symbol": "9999"
+                            }
+                          ]
+                        }
                       }
                     ]
                   }
@@ -318,104 +425,6 @@
                 "bytes": "0000000000000000000000000000000000000000000000000000000000000001"
               },
               {
-                "symbol": "initialize"
-              }
-            ],
-            "data": {
-              "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
-            }
-          }
-        }
-      },
-      "failed_call": false
-    },
-    {
-      "event": {
-        "ext": "v0",
-        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
-        "type_": "diagnostic",
-        "body": {
-          "v0": {
-            "topics": [
-              {
-                "symbol": "fn_return"
-              },
-              {
-                "symbol": "initialize"
-              }
-            ],
-            "data": {
-              "map": [
-                {
-                  "key": {
-                    "symbol": "feed"
-                  },
-                  "val": {
-                    "i32": 0
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "pat"
-                  },
-                  "val": {
-                    "i32": 0
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "pickup"
-                  },
-                  "val": {
-                    "i32": 0
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "points"
-                  },
-                  "val": {
-                    "i32": 0
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "sleep"
-                  },
-                  "val": {
-                    "i32": 0
-                  }
-                },
-                {
-                  "key": {
-                    "symbol": "toy"
-                  },
-                  "val": {
-                    "i32": 0
-                  }
-                }
-              ]
-            }
-          }
-        }
-      },
-      "failed_call": false
-    },
-    {
-      "event": {
-        "ext": "v0",
-        "contract_id": null,
-        "type_": "diagnostic",
-        "body": {
-          "v0": {
-            "topics": [
-              {
-                "symbol": "fn_call"
-              },
-              {
-                "bytes": "0000000000000000000000000000000000000000000000000000000000000001"
-              },
-              {
                 "symbol": "interact"
               }
             ],
@@ -423,6 +432,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -481,6 +493,9 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
+                  "symbol": "1234"
+                },
+                {
                   "symbol": "pat"
                 }
               ]
@@ -535,6 +550,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "pickup"
@@ -593,6 +611,9 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
+                  "symbol": "1234"
+                },
+                {
                   "symbol": "sleep"
                 }
               ]
@@ -647,6 +668,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "toy"
@@ -754,6 +778,9 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
+                  "symbol": "5678"
+                },
+                {
                   "symbol": "feed"
                 }
               ]
@@ -808,6 +835,176 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "5678"
+                },
+                {
+                  "symbol": "pat"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "fn_return"
+              },
+              {
+                "symbol": "interact"
+              }
+            ],
+            "data": {
+              "bool": true
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": null,
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "fn_call"
+              },
+              {
+                "bytes": "0000000000000000000000000000000000000000000000000000000000000001"
+              },
+              {
+                "symbol": "get_points"
+              }
+            ],
+            "data": {
+              "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "fn_return"
+              },
+              {
+                "symbol": "get_points"
+              }
+            ],
+            "data": {
+              "i32": 9
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": null,
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "fn_call"
+              },
+              {
+                "bytes": "0000000000000000000000000000000000000000000000000000000000000001"
+              },
+              {
+                "symbol": "interact"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
+                },
+                {
+                  "symbol": "feed"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": "0000000000000000000000000000000000000000000000000000000000000001",
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "fn_return"
+              },
+              {
+                "symbol": "interact"
+              }
+            ],
+            "data": {
+              "bool": true
+            }
+          }
+        }
+      },
+      "failed_call": false
+    },
+    {
+      "event": {
+        "ext": "v0",
+        "contract_id": null,
+        "type_": "diagnostic",
+        "body": {
+          "v0": {
+            "topics": [
+              {
+                "symbol": "fn_call"
+              },
+              {
+                "bytes": "0000000000000000000000000000000000000000000000000000000000000001"
+              },
+              {
+                "symbol": "interact"
+              }
+            ],
+            "data": {
+              "vec": [
+                {
+                  "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -884,7 +1081,7 @@
               }
             ],
             "data": {
-              "i32": 10
+              "i32": 13
             }
           }
         }
@@ -913,6 +1110,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "invalid"
@@ -989,7 +1189,7 @@
               }
             ],
             "data": {
-              "i32": 10
+              "i32": 13
             }
           }
         }
@@ -1018,6 +1218,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
+                },
+                {
+                  "symbol": "9999"
                 },
                 {
                   "symbol": "feed"
@@ -1074,6 +1277,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHK3M"
+                },
+                {
+                  "symbol": "9999"
                 },
                 {
                   "symbol": "pat"
@@ -1199,7 +1405,7 @@
               }
             ],
             "data": {
-              "i32": 10
+              "i32": 13
             }
           }
         }
@@ -1230,6 +1436,9 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
+                  "symbol": "1234"
+                },
+                {
                   "symbol": "feed"
                 }
               ]
@@ -1284,6 +1493,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -1340,6 +1552,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -1398,6 +1613,9 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
+                  "symbol": "1234"
+                },
+                {
                   "symbol": "feed"
                 }
               ]
@@ -1452,6 +1670,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -1508,6 +1729,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -1566,6 +1790,9 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
+                  "symbol": "1234"
+                },
+                {
                   "symbol": "feed"
                 }
               ]
@@ -1620,6 +1847,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -1676,6 +1906,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -1734,6 +1967,9 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
+                  "symbol": "1234"
+                },
+                {
                   "symbol": "feed"
                 }
               ]
@@ -1788,6 +2024,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -1844,6 +2083,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -1900,6 +2142,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -1956,6 +2201,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -2014,6 +2262,9 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
+                  "symbol": "1234"
+                },
+                {
                   "symbol": "feed"
                 }
               ]
@@ -2068,6 +2319,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -2124,6 +2378,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -2182,6 +2439,9 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
+                  "symbol": "1234"
+                },
+                {
                   "symbol": "feed"
                 }
               ]
@@ -2236,6 +2496,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -2292,6 +2555,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -2350,6 +2616,9 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
+                  "symbol": "1234"
+                },
+                {
                   "symbol": "feed"
                 }
               ]
@@ -2404,6 +2673,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -2460,6 +2732,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -2518,6 +2793,9 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
+                  "symbol": "1234"
+                },
+                {
                   "symbol": "feed"
                 }
               ]
@@ -2572,6 +2850,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -2630,6 +2911,9 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
+                  "symbol": "1234"
+                },
+                {
                   "symbol": "feed"
                 }
               ]
@@ -2684,6 +2968,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -2740,6 +3027,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -2798,6 +3088,9 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
+                  "symbol": "1234"
+                },
+                {
                   "symbol": "feed"
                 }
               ]
@@ -2852,6 +3145,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -2908,6 +3204,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -2966,6 +3265,9 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
+                  "symbol": "1234"
+                },
+                {
                   "symbol": "feed"
                 }
               ]
@@ -3020,6 +3322,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -3076,6 +3381,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -3134,6 +3442,9 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
+                  "symbol": "1234"
+                },
+                {
                   "symbol": "feed"
                 }
               ]
@@ -3188,6 +3499,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -3244,6 +3558,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -3300,6 +3617,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -3356,6 +3676,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -3414,6 +3737,9 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
+                  "symbol": "1234"
+                },
+                {
                   "symbol": "feed"
                 }
               ]
@@ -3468,6 +3794,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -3524,6 +3853,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -3582,6 +3914,9 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
+                  "symbol": "1234"
+                },
+                {
                   "symbol": "feed"
                 }
               ]
@@ -3636,6 +3971,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -3692,6 +4030,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -3750,6 +4091,9 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
+                  "symbol": "1234"
+                },
+                {
                   "symbol": "feed"
                 }
               ]
@@ -3804,6 +4148,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -3860,6 +4207,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -3918,6 +4268,9 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
+                  "symbol": "1234"
+                },
+                {
                   "symbol": "feed"
                 }
               ]
@@ -3972,6 +4325,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -4030,6 +4386,9 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
+                  "symbol": "1234"
+                },
+                {
                   "symbol": "feed"
                 }
               ]
@@ -4084,6 +4443,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -4140,6 +4502,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -4198,6 +4563,9 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
+                  "symbol": "1234"
+                },
+                {
                   "symbol": "feed"
                 }
               ]
@@ -4252,6 +4620,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -4308,6 +4679,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -4366,6 +4740,9 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
+                  "symbol": "1234"
+                },
+                {
                   "symbol": "feed"
                 }
               ]
@@ -4420,6 +4797,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -4476,6 +4856,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -4534,6 +4917,9 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
+                  "symbol": "1234"
+                },
+                {
                   "symbol": "feed"
                 }
               ]
@@ -4588,6 +4974,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -4644,6 +5033,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -4700,6 +5092,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -4756,6 +5151,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -4814,6 +5212,9 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
+                  "symbol": "1234"
+                },
+                {
                   "symbol": "feed"
                 }
               ]
@@ -4868,6 +5269,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -4924,6 +5328,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -4982,6 +5389,9 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
+                  "symbol": "1234"
+                },
+                {
                   "symbol": "feed"
                 }
               ]
@@ -5036,6 +5446,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -5092,6 +5505,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -5150,6 +5566,9 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
+                  "symbol": "1234"
+                },
+                {
                   "symbol": "feed"
                 }
               ]
@@ -5204,6 +5623,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -5260,6 +5682,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -5318,6 +5743,9 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
+                  "symbol": "1234"
+                },
+                {
                   "symbol": "feed"
                 }
               ]
@@ -5372,6 +5800,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -5430,6 +5861,9 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
+                  "symbol": "1234"
+                },
+                {
                   "symbol": "feed"
                 }
               ]
@@ -5484,6 +5918,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -5540,6 +5977,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -5598,6 +6038,9 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
+                  "symbol": "1234"
+                },
+                {
                   "symbol": "feed"
                 }
               ]
@@ -5652,6 +6095,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -5708,6 +6154,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -5766,6 +6215,9 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
+                  "symbol": "1234"
+                },
+                {
                   "symbol": "feed"
                 }
               ]
@@ -5820,6 +6272,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -5876,6 +6331,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -5934,6 +6392,9 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
+                  "symbol": "1234"
+                },
+                {
                   "symbol": "feed"
                 }
               ]
@@ -5988,6 +6449,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -6044,6 +6508,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -6100,6 +6567,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -6156,6 +6626,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -6214,6 +6687,9 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
+                  "symbol": "1234"
+                },
+                {
                   "symbol": "feed"
                 }
               ]
@@ -6268,6 +6744,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -6324,6 +6803,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -6382,6 +6864,9 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
+                  "symbol": "1234"
+                },
+                {
                   "symbol": "feed"
                 }
               ]
@@ -6436,6 +6921,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -6492,6 +6980,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -6550,6 +7041,9 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
+                  "symbol": "1234"
+                },
+                {
                   "symbol": "feed"
                 }
               ]
@@ -6604,6 +7098,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -6660,6 +7157,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -6718,6 +7218,9 @@
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
                 },
                 {
+                  "symbol": "1234"
+                },
+                {
                   "symbol": "feed"
                 }
               ]
@@ -6772,6 +7275,9 @@
               "vec": [
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFCT4"
+                },
+                {
+                  "symbol": "1234"
                 },
                 {
                   "symbol": "feed"
@@ -6848,7 +7354,7 @@
               }
             ],
             "data": {
-              "i32": 210
+              "i32": 213
             }
           }
         }
